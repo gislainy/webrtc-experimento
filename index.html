@@ -1,0 +1,72 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aplicacao com webrtc e Node.js</title>
+  <style type="text/css">
+    #remoto {
+      width: 100%;
+      color: #F00;
+      border: 6px solid #000;
+      height: 240px;
+      background-color: #3F6;
+    }
+
+    #local {
+      width: 20%;
+      position: relative;
+      border: 6px solid #000;
+      top: 20px;
+      ;
+      height: 150px;
+      margin: 0 auto;
+      background-color: #FF0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='mainDiv'>
+    <table border="0" width="70%">
+      <tr>
+        <td align="center">
+          Video Local
+        </td>
+        <td align="center">
+          Video remoto
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <video id="localVideo" controls="controls" autoplay></video>
+
+        </td>
+        <td align="center">
+          <video id="remoteVideo" controls="controls" autoplay></video>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <textarea rows="4" cols="60" id="dataChannelSend" placeholder="Sera ativado quando o DataChannel for estabelecido..."></textarea>
+        </td>
+        <td align="center">
+          <textarea rows="4" cols="60" id="dataChannelReceive" disabled></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <button id="sendButton">Enviar</button>
+        </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src='/socket.io/socket.io.js'></script>
+  <script src='js/adapter.js'></script>
+  <script src='js/cliente.js'></script>
+</body>
+
+
+</html>
