@@ -1,0 +1,106 @@
+{
+  "session": {
+    "roles": {
+      "role": [
+        {
+          "idrole": "paciente",
+          "name": "paciente"
+        },
+        {
+          "idrole": "medico",
+          "name": "medico"
+        }
+      ]
+    },
+    "connections": {
+      "connection": [
+        {
+          "idconnection": "consulta1",
+          "name": "Consulta 1",
+          "form": {
+            "typedata": [
+              "charType"
+            ]
+          },
+          "media": {
+            "streamAudio": {
+              "mandatory": true
+            },
+            "streamVideo": {
+              "mandatory": true
+            }
+          },
+          "attachedRoles": {
+            "attachedRole": [
+              {
+                "idrole": "paciente",
+                "capacilities": {
+                  "op": [
+                    "sendAudio",
+                    "sendVideo",
+                    "receiveVideo",
+                    "receiveAudio"
+                  ]
+                }
+              },
+              {
+                "idrole": "medico",
+                "capacilities": {
+                  "op": [
+                    "sendAudio",
+                    "sendVideo",
+                    "receiveVideo",
+                    "receiveAudio"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "idconnection": "consulta2",
+          "name": "Consulta 2",
+          "form": {
+            "typedata": [
+              "charType"
+            ]
+          },
+          "media": {
+            "streamAudio": {
+              "mandatory": true
+            },
+            "streamVideo": {
+              "mandatory": true
+            }
+          },
+          "attachedRoles": {
+            "attachedRole": [
+              {
+                "idrole": "paciente",
+                "capacilities": {
+                  "op": [
+                    "sendAudio",
+                    "sendVideo",
+                    "receiveVideo",
+                    "receiveAudio"
+                  ]
+                }
+              },
+              {
+                "idrole": "medico",
+                "capacilities": {
+                  "op": [
+                    "sendAudio",
+                    "sendVideo",
+                    "receiveVideo",
+                    "receiveAudio"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
